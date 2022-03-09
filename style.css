@@ -138,40 +138,81 @@ padding:47px 0 ;
 
 /* Business Segments */
 
-.businessSegment{
-    width: 90%;
-    margin-top: 90px;
+.segment h5{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
-.segments {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+.businessSegment {
+    justify-content: center;
+    margin-top: 90px;    
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
   }
   
-  .segment-item { 
-    /* background: var(--clr-accent); */
-     overflow: hidden;
+  .segment {
+    max-width: 25vw;
+    position: relative;
+    color: white;
+    overflow:hidden;
   }
   
-  .segment-img {
+  .segment img {
+    
     background-size: cover;
     width: 100%;
     height: 100%;
     transition: transform 750ms cubic-beizer(0.5, 0, 0.5, 1), opacity 250ms linear;
-    filter: brightness(0.6);
   }
   
-  .segment-item:focus {
+  .segment:focus {
     position: relative;
     z-index: 2;
   }
   
-  .segment-img:hover,
-  .segment-item:focus .segment-img {
+  .segment img:hover,
+  .segment img:focus .segment {
     transform: scale(1.2);
   }
 
 
+/* Call To Action */
+
+.callToAction{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFECE3;
+}
+.Action{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:60%;
+}
+.Action h3{
+font-size: 4em;
+}
+.Action button{
+    color: white;
+    padding:1em 4em ;
+    width: fit-content;
+    background: #FF5200;
+box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.83);
+border-radius: 12px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    background-color: #FF5200;
+}
 
 /* Customers */
 
