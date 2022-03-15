@@ -179,24 +179,209 @@ width: 20%;
     text-align: center;
 }
 
-.founderImg h5{
-    font-weight: bold;
-    font-size: 2em;
-    padding-top: 5px;
-}
 .founderImg h6{
+    font-weight: bold;
     padding-top:1em;
-    font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1em;
+}
+.founderImg h5{
+    font-weight: 500;
+    font-size: 1em;
+    padding-top: 5px;
 }
 .aboutUs p{
     padding: 0 8%; 
-    font-size: 1.5rem;
-    
+    font-size: max(1.8vw,14px);
 }
 
 @media(max-width:1000px){
     .aboutUs{
     flex-direction: column;
     }
+    .founderImg img{
+        width: 100px;
+    }
+    .founderImg{
+        padding-left: 0;
+    }
+    .founderImg{
+
+    }
+    .aboutUs p{
+        padding-top: 20px;
+    }
 }
+
+.ourServices{
+    margin-top:50px ;
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 0 3em;
+    flex-wrap: wrap;
+}
+.card{
+    width:30%;
+    font-weight: 700;
+    background:#F8EFEF;
+    text-align: center;
+}
+.card img{
+    height: 50%;
+    width: 100%;
+}
+.card h4{
+    color: red;
+    padding:1em 0;
+    font-size: max(1.4vw,12px);
+}
+.card p{
+    padding:0 2em;
+    font-size: max(1.2vw,12px);
+}
+
+@media (max-width:800px){
+    .card{
+        width: 80%;
+    }
+    .ourServices{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Customers */
+
+  /* Slider */
+  .container{
+    background-color:  #FFECE3;
+    height: 140px;
+}
+.slick-slide {
+    margin: 10px;
+}
+
+.slick-slide img {
+
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* Customer End */
