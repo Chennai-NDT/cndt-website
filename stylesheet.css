@@ -27,11 +27,12 @@ nav{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    height: 60px;
+    height: 10vh;
     width: 100%;
     top:0;
     background: white;
     z-index: 999;
+    box-shadow:0 1px;
 }
 
 #logo{
@@ -55,7 +56,7 @@ margin:2rem ;
     color:black;
     font-family:var(--secondary-font);
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .primary-nav a:hover{
 text-decoration: underline;
@@ -204,9 +205,7 @@ width: 20%;
     .founderImg{
         padding-left: 0;
     }
-    .founderImg{
-
-    }
+   
     .aboutUs p{
         padding-top: 20px;
     }
@@ -215,16 +214,26 @@ width: 20%;
 .ourServices{
     margin-top:50px ;
     display: flex;
-    
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 3em;
     flex-wrap: wrap;
 }
 .card{
-    width:30%;
+    width:435px;
     font-weight: 700;
     background:#F8EFEF;
     text-align: center;
+    margin: 1em;
+}
+@media (max-width:700px){
+    .ourServices{
+        padding: 0;
+    }
+    .card{
+        margin: 0;
+        font-size: 12px;
+        padding-bottom: 1em;
+    }
 }
 .card img{
     height: 50%;
@@ -233,11 +242,11 @@ width: 20%;
 .card h4{
     color: red;
     padding:1em 0;
-    font-size: max(1.4vw,12px);
+    font-size:1.6em;
 }
 .card p{
-    padding:0 2em;
-    font-size: max(1.2vw,12px);
+    padding:0 3em;
+    font-size: 1.2em;
 }
 
 @media (max-width:800px){
@@ -266,16 +275,14 @@ width: 20%;
 
   /* Slider */
   .container{
-    background-color:  #FFECE3;
+    background-color:  rgb(0, 140, 255);
     height: 140px;
+    margin-top: 0px;
 }
 .slick-slide {
     margin: 10px;
 }
 
-.slick-slide img {
-
-}
 
 .slick-slider
 {
@@ -385,3 +392,159 @@ width: 20%;
 }
 
 /* Customer End */
+
+/* Business Segment */
+
+.businessSegment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em;
+}
+.segment{
+    position: relative;
+    margin: 0.1vw;
+}
+.segment img{
+    width: max(150px,30vw);
+}
+
+.segment h5{
+    font-weight: 600;
+    font-size: 3vw;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    transition: font-size 200ms ease-in;
+}
+.segment:hover > h5{
+    font-size: 3em;
+}
+
+/* Products */
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.product{
+    width: max(150px,20vw);
+}
+.product img{
+    width: 100%;
+}
+.product h5{
+    text-align: center;
+    font-family:  'Roboto';
+    padding: 1em;
+}
+
+/* Contact Us Form */
+
+#contactForm{
+    position: relative;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    box-shadow: -54px 62px 10px rgba(0, 0, 0, 0.25);
+    padding: 3em 4vw 3em 3em;
+}
+#contactForm h3{
+    font-size: 2.8em;
+}
+#contactForm > label{
+    font-size: max(16px,1.2vw);
+}
+#contactForm > input{
+    border:none ;
+    border-bottom: 2px solid black;
+    width : 70%;
+    font-size: 30px;
+    margin-top: 10px;
+}
+textarea{
+    font-size: 30px;
+    margin-top: 10px;
+    border:none ;
+    border-bottom: 2px solid black;
+    width: 90%;
+}
+.contact-us{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
+@media (max-width:1000px) {
+    #contactForm{
+        position: relative;
+        width: 65%;
+        display: flex;
+        flex-direction: column; 
+        box-shadow: -54px 62px 10px rgba(0, 0, 0, 0.25);
+    }
+    #contactForm > input{
+        width : 100%;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    textarea{
+        width: 100%;
+    }
+    .contact-us{
+        margin-right: 0;
+    }
+}
+
+.icons{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2vw;
+    align-items: center;
+    width: fit-content;
+    padding: 2vw;
+    background-color: #FEC001;
+    filter: drop-shadow(-19px 17px 0px rgba(255, 210, 70, 0.72));
+    z-index: 800;
+}
+
+.icons img{
+    width: 70%;
+}
+
+.spacerSmall{
+    height: 50px;
+    width: 100%;
+}
+
+@media (max-width:650px){
+    .contact-us{
+        flex-direction: column;
+    }
+    .icons{
+        flex-direction: row;
+        filter: none;
+        margin: 30px 0;
+    }
+    #contactForm{
+        padding:0 ;
+        margin-left: 1em;
+        box-shadow: none;
+    }
+    #contactForm>input{
+        font-size: 18px;
+    }
+}
+footer{
+    text-align: center;
+    font-family: var(--mons);
+    border-bottom:  10px solid #383838;
+}
