@@ -431,9 +431,11 @@ width: 20%;
 }
 .product{
     width: max(150px,20vw);
+    
 }
 .product img{
     width: 100%;
+    aspect-ratio: 1/.8;
 }
 .product h5{
     text-align: center;
@@ -594,7 +596,6 @@ textarea{
 #links a{
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    
 }
 #links{
     margin-top: 1em;
