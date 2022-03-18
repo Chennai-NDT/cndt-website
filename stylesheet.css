@@ -7,7 +7,7 @@ html{
 }
 :root{
 --green:#7AB846;
---orange:#E4281C;
+--orange:rgb(255, 60, 0);
 --lime:#FAFF00;
 --primary-font:'Poppins','Helvetica';
 --secondary-font:'Manrope','sans-serif';
@@ -18,7 +18,7 @@ font-weight: 400;
 }
 @media (max-width:1367) {
     :root{
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
