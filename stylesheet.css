@@ -531,7 +531,9 @@ width: 100%;
 #contactForm >button{
     background-color: #FEC001;
     padding: 1em 3em;
+    font-family: var(--secondary-font) ;
     width: fit-content;
+    font-weight: bold;
 }
 #contactForm > input:focus{
     outline: none;
@@ -695,9 +697,37 @@ footer{
     margin-left:5%;
 }
 .equipments p{
-    padding:  3rem 0;  
+    padding:  2rem 0 3rem;  
 }
 .equipments img{
-    margin: 0 auto;
     width: 30%;
+    aspect-ratio: 1/.8;
+}
+.equipments h2{
+    padding: 1em 0;
+}
+
+/* Accessories */
+.accessories{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1rem;
+}
+.accessorie{
+    width: max(150px,20vw);
+    text-align: center;
+    background-color: #FEC001;
+    border-radius: 0px 31px;
+}.accessorie img{
+    width: 80%;
+    aspect-ratio: 1/.9;
+    margin: 2em auto;
+    border-radius: 12px;
+}
+.accessorie h5{
+    padding:2em ;
+    background-color: #383838;
+    color: white;
+    border-radius: 0px 31px;
 }
