@@ -528,6 +528,11 @@ width: 100%;
     font-size: 30px;
     margin-top: 10px;
 }
+#contactForm >button{
+    background-color: #FEC001;
+    padding: 1em 3em;
+    width: fit-content;
+}
 #contactForm > input:focus{
     outline: none;
 }

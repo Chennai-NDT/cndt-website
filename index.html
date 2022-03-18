@@ -188,17 +188,20 @@
             <img src="./images/twitter.png" alt="">
             <img src="./images/whatsapp.png" alt="">
         </div>
-        <form action="" method="post" id="contactForm">
+        <form action="https://formsubmit.co/chennaindt@outlook.com" method="post" id="contactForm">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New submission!">
                 <h3>Contact Us!</h3>
                 <div class="spacer"></div>
                 <label for="name">Name</label>
-                <input type="text" name="name">
+                <input type="text" name="name" required>
                 <!-- <div class="spacerSmall"></div> -->
                 <label for="email">Email</label>
-                <input type="email" name="email">
+                <input type="email" name="email" required>
                 <!-- <div class="spacer"></div> -->
                 <label for="message">Message</label>
-                <textarea name="" id="" cols="30" rows="5"></textarea>
+                <textarea name="message" id="" cols="30" rows="5" required></textarea>
+                <button type="submit">Submit</button>
         </form>
     </section>
     <div class="spacer"></div>
