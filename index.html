@@ -3,96 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-</head>
-<style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Poppins:wght@400;800&family=Roboto&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>CHENNAI NDT</title>
     
-    img{
-        height: 50vh;
-        margin: 0 auto;
-    }
-    :root {
-  --bg-color: black;
-  --typewriterSpeed: 6s;
-  --typewriterCharacters: 24;
-}
-
-body {
-    color: white;
-  margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  background: var(--bg-color);
-}
-
-h1 {
-  font-size:  4vw;
-  position: relative;
-  font-family: "Source Code Pro", monospace;
-  position: relative;
-  width: max-content;
-  margin: 0 auto;
-}
-
-h1::before,
-h1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-h1::before {
-  background: var(--bg-color);
-  animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards;
-}
-
-h1::after {
-  width: 0.125em;
-  background: white;
-  animation: typewriter var(--typewriterSpeed)
-      steps(var(--typewriterCharacters)) 1s forwards,
-    blink 750ms steps(var(--typewriterCharacters)) infinite;
-}
-
-
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
-
-@keyframes blink {
-  to {
-    background: transparent;
-  }
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-p{
-    font-family:monospace;
-}
-
-</style>
+</head>
 <body>
-    <h1> <span id="type-animation">This page is under construction</span></h1>
-    <img src="./images/under-construction.png" alt="">
+    <button class="nav-toggle">
+        <img id="menu-icon" src="./images/menu.png" alt="">
+    </button>
+    <nav>
+        <img id="logo" src="./images/logo.png" alt="logo">
+        <ul data-visible="false" class="primary-nav">
+            <li><a href="/"> Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- <img src="./images/cover.jpg" alt=""> -->
+    <div class="cover">
+        <img src="./images/cover.jpg" alt="">
+        <div class="content"><h1>CHENNAI NDT</h1>
+            <div class="spacer" style="height: 30px;"></div>
+            <h2>We Design and execution of customized<span>,</span> automated MPI and LPI equipment<span>.</span></h2>
+            <div class="spacer"></div>
+            <button onclick="location.href='/i.html#contact-us'" class="contactUs">Contact us</button></div>
+    </div>
+    <div class="spacer"></div>
+    <div class="sub-title">
+        <img src="./images/line.png" alt="">
+        <h3>About Us</h3>
+    </div>
+    <section class="aboutUs fade-left">
+            <div class="founderImg">
+                <img src="./images/ashok.png" alt="">
+                <h6>K. Ashok Kumar Singh</h6>
+                <h5>Founder</h5>
+            </div>
+            <p >We Are A Company who meet our customer expectations through value-driven
+                expertise.<br>
+                Our vission is To be amongst the top players of the field.And must be synonymous with products benchmarked to international
+                Standards and priced indegineous</p>
+    </section>
+    <div class="spacer"  id="services"></div>
+    <div class="sub-title" >
+        <img src="./images/line.png" alt="">
+        <h3>Our Services</h3>
+    </div>
+    <section class="ourServices fade-right">
+        <div class="card">
+            <img src="./images/inspection.jpg" alt="">
+            <h4>NDT Inspection</h4>
+            <p>Non-destructive testing is a wide group of testing and analysis techniques used by industry to evaluate the properties of a material, component, structure or welding defects and discontinuities without causing damage to the original part.</p>
+        </div>
+        <div class="card">
+            <img src="./images/ashokInspection.jpg" alt="">
+            <h4>NDT Equipment Manufacturing</h4>
+            <p>Complete Line Of NDT Instruments With Advanced Features For A Wide Range Of Applications. Discover The Ideal NDT Device Specifically Designed To The Needs Of Your Industry. Reliable Systems. Innovative Instruments. Reliable Flaw Detection.</p>
+        </div>
+        <div class="card">
+            <img src="./images/training.jpg" alt="">
+            <h4>NDT Taining</h4>
+            <p>Non destructive testing consists of various analysis techniques that are predominantly used in scientific and technological industries in order to evaluate the properties of any material or system without causing any damages to the material.</p>
+        </div>
+    </section>
+    <div class="spacer"></div>
+    <div class="sub-title">
+        <img src="./images/line.png" alt="">
+        <h3>Our Clients</h3>
+    </div>
+    <div class="spacer"></div>
+    <section class="ourClients fade-left"> 
+        <div class="container">
+             <section class="customer-logos slider">
+                 <div class="slide"><img src="./images/Logos/sundaram.png"></div>
+                <div class="slide"><img src="./images/Logos/mei.png"></div>
+                <div class="slide"><img src="./images/Logos/newtech.png"></div>
+                <div class="slide"><img src="./images/Logos/brakesIndia.png"></div>
+                <div class="slide"><img src="./images/Logos/mahendra.png"></div>
+                <div class="slide"><img src="./images/Logos/flowserve.png"></div>
+                <div class="slide"><img src="./images/Logos/gkn-au-stacked.png"></div>
+                <div class="slide"><img src="./images/Logos/wheelsIndia.png"></div>                
+                <div class="slide"><img src="./images/Logos/Toshiba_logo.png"></div>
+                <div class="slide"><img src="./images/Logos/Larsen&Toubro_logo.png"></div>
+                <div class="slide"><img src="./images/Logos/Hinduja_Group_Logo.png"></div>                
+                <div class="slide"><img src="./images/Logos/TVS_Motor_logo.png"></div>                
+             </section>
+          </div>
+    </section>
+    <div class="spacer"></div>
+    <div class="sub-title">
+        <img src="./images/line.png" alt="">
+        <h3>Business Segments</h3>
+    </div>
+    <div class="spacer"></div>
+    <section class="businessSegment fade-right">
+            <div class="segment">
+              <img src="images/automobile.jpg" alt="" />
+              <h5>Automobile</h5>
+            </div>
+            <div class="segment">
+              <img src="images/aerospace.jpg" alt="" />
+              <h5>Aerospace</h5>
+            </div>
+            <div class="segment">
+              <img class="segment" src="images/steelallied.jpg" alt="" />
+              <h5>Steel & Allied</h5>
+            </div>
+            <div class="segment">
+              <img src="./images/oilgas.jpg" alt="">
+              <h5>Oil & Gas</h5>
+            </div>
+            <div class="segment">
+              <img src="./images/powerplant.jpg" alt="">
+              <h5>Power Plant</h5>
+            </div>
+            <div class="segment"><img src="./images/railway.jpg" alt="">
+              <h5>Railway</h5>
+            </div>
+    </section>
+    <div class="spacer"  id="products"></div>
+    <div class="sub-title">
+        <img src="./images/line.png" alt="">
+        <h3>Products</h3>
+    </div>
+    <div class="spacer"></div>
+    <section class="products fade-left">
+        <div class="product">
+            <a href="/equipments.html">
+                <div>
+                    <img src="images/mpi equipment2.jpeg" alt="" />
+                    <h5>Equipments</h5>
+                </div>
+            </a>
+            
+          </div>
+          <div class="product">
+            <a href="/accessories.html">
+                <div>
+                    <img src="images/accessories.png" alt="" />
+                    <h5>Accessories</h5>
+                </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/uvlight.html">
+                <div>
+                    <img src="images/uvled.png" alt="" />
+                    <h5>UV Led Lamps</h5>
+                </div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/advanced.html">
+                <div>
+                    <img src="./images/advanced.jpg" alt="">
+                    <h5>UT & Advanced NDT Services</h5>
+                </div>
+            </a>
+          </div>
+    </section>
+    <div class="spacer"></div>
+    <div class="sub-title">
+        <img src="./images/line.png" alt="">
+        <h3>Consumables</h3>
+    </div>
+    <div class="spacer"></div>
+    <section class="consumables">
+        <img src="./images/consumabes.png" alt="">
+    </section>
+    <div class="spacer" id="contact-us"></div>
+    <section class="contact-us" >
+        <div class="icons">
+            <img src="./images/facebook.png" alt="">
+            <img src="./images/instagram.png" alt="">
+            <img src="./images/twitter.png" alt="">
+            <img src="./images/whatsapp.png" alt="">
+        </div>
+        <form action="" method="post" id="contactForm">
+                <h3>Contact Us!</h3>
+                <div class="spacer"></div>
+                <label for="name">Name</label>
+                <input type="text" name="name">
+                <!-- <div class="spacerSmall"></div> -->
+                <label for="email">Email</label>
+                <input type="email" name="email">
+                <!-- <div class="spacer"></div> -->
+                <label for="message">Message</label>
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+        </form>
+    </section>
+    <div class="spacer"></div>
+    
+    <div class="mapBox">
+        <h3>Find Us Here!</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62219.6711858233!2d80.06711367910157!3d12.925102599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f630bb412d3%3A0x11d6ba51f491979c!2sChennai%20NDT%20-%20Manufacturer%20NDT%20Equipment%2C%20MPI%20Equipment%2C%20Crack%20Detection%20Equipment%20%7C%20NDT%20Training!5e0!3m2!1sen!2sin!4v1647501033121!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" id="map"></iframe>
+    </div>
+    <div class="spacer"></div>
+    <section class="sitemap">
+        <div>
+            <h5>Chennai NDt</h5>
+            <p>#23,Mellandai 1st Cross Street <br>
+            Musichur Road, Tambaram West,<br>
+            Chennai - 600 045.</p>
+            <p>Phone: +91 98844 70812</p>
+        </div>
+        <div id="siteLinks">
+            <h5>Sitemap</h5>
+            <ul id="links">
+                <li><a href="/"> Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
     <footer>
         <p>© 2022 chennaindt - all rights reserved.</p>
     </footer>
 </body>
-
+<script src="nav.js"></script>
+<script src="home.js"></script>
 </html>

@@ -14,6 +14,7 @@ html{
 --mons: 'Montserrat', sans-serif;
 font-family: var(--primary-font);
 color: black;
+font-weight: 400;
 }
 @media (max-width:1367) {
     :root{
@@ -37,6 +38,18 @@ body{
     transform: translateX(-10%);
     transition: all 1s;
 }
+@media (max-width:700px) {
+    .fade-left{
+        opacity: none;
+      transform:none;
+      transition: all 1s;
+    }
+    .fade-right{
+        opacity: none;
+        transform: none;
+        transition: none;
+    }
+}
 .visible {
     opacity: 1;
     transform: translate(0, 0);
@@ -53,6 +66,7 @@ nav{
     z-index: 999;
     box-shadow:0 1px;
 }
+
 
 #logo{
 height: 80%;
@@ -138,7 +152,7 @@ left:9vw;
 .cover h1{
     margin-top: 4.8vw;
     color: var(--orange);
-    font-weight: 800;
+    font-weight: 900;
     font-size:max(4vw,24px);
     text-shadow: 0px 4px 4px #000000;
 }
@@ -163,10 +177,20 @@ left:9vw;
     padding: 0.5em 2em; 
     width: fit-content;
     color: white;
-    text-shadow: -2px 1px 2px rgba(0, 0, 0, 0.85);
+    /* text-shadow: -2px 1px 2px rgba(0, 0, 0, 0.85); */
     box-shadow: -3px 4px 4px #000000;
     border-radius: 6px;
 }
+  
+  .contactUs:hover {
+      cursor: pointer;
+}
+  
+  .contactUs:active {
+    
+    box-shadow: 0 0px 0px #000;
+    transform: translateY(4px);
+  }
 .spacer{
     height: 5vw;
     width: 100%;
@@ -175,10 +199,10 @@ left:9vw;
     margin-left: 5%;
 }
 .sub-title img{
-width: 20%;
+width: max(96px,18%);
 }
 .sub-title h3{
-    font-size:3vw ;
+    font-size:max(14px,2.8vw) ;
 }
 
 /* About Us */
@@ -451,6 +475,7 @@ width: 20%;
     width: max(150px,20vw);
     overflow: hidden;
     transition: outline 200ms ease-in-out;
+    background-color: #383838;
 }
 .product img{
     width: 100%;
@@ -458,12 +483,25 @@ width: 20%;
     overflow: hidden;
 }
 .product h5{
+    font-size: max(1.2vw);
     text-align: center;
     font-family:  'Roboto';
     padding: 1em;
 }
+.product a{
+text-decoration: none;
+color:white;
+
+}
 .product:hover{
-    outline: 3px solid red;
+    outline: 3px solid #E4281C;
+}
+
+/* Consumable */
+
+.consumables img{
+background-color: #7AB846;
+width: 100%;
 }
 
 /* Contact Us Form */
@@ -620,6 +658,12 @@ textarea{
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
 }
+#links a:hover{
+    text-decoration: underline;
+}
+#links a:active{
+    color: #7AB846;
+}
 #links{
     margin-top: 1em;
     list-style: none;
@@ -634,4 +678,21 @@ footer{
     text-align: center;
     font-family: var(--mons);
     border-bottom:  10px solid #383838;
+}
+
+
+
+
+
+/* Equipments */
+
+.equipments{
+    margin-left:5%;
+}
+.equipments p{
+    padding:  3rem 0;  
+}
+.equipments img{
+    margin: 0 auto;
+    width: 30%;
 }
