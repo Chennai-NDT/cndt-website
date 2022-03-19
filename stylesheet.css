@@ -693,18 +693,23 @@ footer{
 
 /* Equipments */
 #equipment-title{
+    
     margin: 0;
     color: white;
-    padding:1em ;
-    background-color: #E4281C;
+    padding:1em 2em ;
+    background-color: #000;
 }
+
 .equipments{
     
     width: 80%;
     margin: 30px auto;
 }
 .equipment{
+    background-color: #7AB846;
     display: flex;
+    margin: 1em;
+    padding: 1em;
 }
 .equipments p{
     padding:  2rem 0 3rem;  
@@ -713,8 +718,8 @@ footer{
     width: 30%;
     aspect-ratio: 1/.8;
 }
-.equipments h2{
-    padding: 1em 0;
+.equipment h2{
+    text-decoration:underline;
 }
 
 /* Accessories */
