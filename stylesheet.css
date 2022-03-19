@@ -692,9 +692,19 @@ footer{
 
 
 /* Equipments */
-
+#equipment-title{
+    margin: 0;
+    color: white;
+    padding:1em ;
+    background-color: #E4281C;
+}
 .equipments{
-    margin-left:5%;
+    
+    width: 80%;
+    margin: 30px auto;
+}
+.equipment{
+    display: flex;
 }
 .equipments p{
     padding:  2rem 0 3rem;  
