@@ -110,9 +110,7 @@ color: var(--orange);
     .primary-nav a{
         color: white;
     }
-    .active{
-        color: var(--orange);
-    }
+    
     .nav-toggle{
         display: block;
         width:40px;
@@ -842,5 +840,13 @@ footer{
 }
 .iso{
     width: 200px;
-    margin: 2em auto;
+    aspect-ratio: 1;
+    padding:1em;
+}
+#active{
+    color: var(--orange);
+}
+.iso-container{
+    height: 300px;
+    margin: 0 auto;
 }
