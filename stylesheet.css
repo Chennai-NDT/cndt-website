@@ -110,7 +110,7 @@ text-decoration: underline;
         color: white;
     }
     .active{
-        color: #E4281C;
+        color: var(--orange);
     }
     .nav-toggle{
         display: block;
@@ -170,7 +170,7 @@ left:9vw;
 }
 
 .contactUs{
-    background-color: #f00;
+    background-color: var(--orange);
     border: none;
     font-size: max( 1.6vw, 9.7px);
     font-weight: 700; 
