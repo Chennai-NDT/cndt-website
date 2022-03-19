@@ -86,9 +86,10 @@ margin:2rem ;
     font-family:var(--secondary-font);
     font-weight: bold;
     font-size: 1.2rem;
+    transition: color 200ms ease-in-out;
 }
 .primary-nav a:hover{
-text-decoration: underline;
+color: var(--orange);
 }
 .nav-toggle{
     display: none;
@@ -184,6 +185,8 @@ left:9vw;
   
   .contactUs:hover {
       cursor: pointer;
+      background-color: rgb(255, 40, 0);
+      transform: scale(1.1);
 }
   
   .contactUs:active {
@@ -537,6 +540,7 @@ width: 100%;
     width: fit-content;
     font-size: 1em;
     font-weight: bold;
+    border: 2px solid black;
 }
 #contactForm > input:focus{
     outline: none;
