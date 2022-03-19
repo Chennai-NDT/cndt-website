@@ -724,13 +724,23 @@ footer{
     padding:  2rem 0 3rem;  
 }
 .equipments img{
-    width: 30%;
+    width: max(220px,30%);
     aspect-ratio: 1/.8;
 }
 .equipment h2{
     text-decoration:underline;
 }
-
+@media (max-width:700px){
+    .equipment{
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        margin: 1em 0;
+    }
+    .equipments{
+        width: 100%;
+    }
+}
 /* Accessories */
 .accessories{
     display: flex;
