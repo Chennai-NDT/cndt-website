@@ -22,10 +22,11 @@ $(document).ready(function(){
 });
 
 const faders = document.querySelectorAll("section");
+const equipments=document.querySelectorAll(".equipment");
 const appearOptions = {
     threshold: 0,
     rootMargin: "0px 0px -150px 0px"
-  };
+}
   
   const appearOnScroll = new IntersectionObserver(function(
     entries,
@@ -45,4 +46,6 @@ const appearOptions = {
   faders.forEach(fader => {
     appearOnScroll.observe(fader);
   });
-  
+  equipments.forEach(equipment=>{
+    appearOnScroll.observe(equipment);
+  })
