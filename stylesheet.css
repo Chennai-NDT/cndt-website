@@ -754,7 +754,8 @@ footer{
     margin: 30px auto;
 }
 .equipment{
-    background-color: #b6e78d;
+    color: white;
+    background-color: var(--orange);
     display: flex;
     margin: 1em;
     padding: 1em;
