@@ -541,6 +541,8 @@ width: 100%;
     font-size: 1em;
     font-weight: bold;
     border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
 }
 #contactForm > input:focus{
     outline: none;
