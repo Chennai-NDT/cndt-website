@@ -702,7 +702,10 @@ footer{
 
 /* Equipments */
 #equipment-title{
-    
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0;
     color: white;
     padding:1em 2em ;
@@ -715,7 +718,7 @@ footer{
     margin: 30px auto;
 }
 .equipment{
-    background-color: #7AB846;
+    background-color: #b6e78d;
     display: flex;
     margin: 1em;
     padding: 1em;
