@@ -13,3 +13,4 @@ menu.addEventListener("click",()=>{
         menuIcon.src="./images/menu.png";
     }
 })
+
