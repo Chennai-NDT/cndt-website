@@ -805,3 +805,9 @@ footer{
     color: white;
     border-radius: 0px 31px;
 }
+
+#advanced-title{
+    color: #fff;
+    background-color: #000;
+    padding: 1em;
+}
