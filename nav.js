@@ -14,3 +14,6 @@ menu.addEventListener("click",()=>{
     }
 })
 
+document.getElementById('logo').addEventListener('click',()=>{
+    location.href="http://chennaindt.in";
+  });

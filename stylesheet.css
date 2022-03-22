@@ -69,6 +69,7 @@ nav{
 
 
 #logo{
+cursor: pointer;
 height: 80%;
 margin:2rem ;
 }
@@ -94,7 +95,42 @@ color: var(--orange);
 .nav-toggle{
     display: none;
 }
-
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropbtn{
+      border: none;
+      text-decoration: none;
+    color:black;
+    font-family:var(--secondary-font);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 200ms ease-in-out;
+    background-color: white;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {color: var(--orange);}
 @media (max-width:1000px) {
     .primary-nav{
         position: fixed;
@@ -110,7 +146,6 @@ color: var(--orange);
     .primary-nav a{
         color: white;
     }
-    
     .nav-toggle{
         display: block;
         width:40px;
@@ -128,6 +163,31 @@ color: var(--orange);
     .primary-nav[data-visible="true"]{
         transform: translateX(0%);
     }
+    .dropdown-content {
+        display: none;
+        position: static;
+        background-color: transparent;
+        min-width: 160px;
+        box-shadow: none;
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropbtn{
+          border: none;
+          text-decoration: none;
+        color:#fff;
+        font-family:var(--secondary-font);
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: color 200ms ease-in-out;
+        background-color: transparent;
+      }
+      
 }
 
 .cover{
@@ -259,13 +319,14 @@ width: max(96px,18%);
     flex-wrap: wrap;
 }
 .card{
-    width:370px;
+    width:350px;
     height: 100%;
     font-weight: 700;
     background:#F8EFEF;
     text-align: center;
     margin: 1em;
     padding-bottom:1em ;
+    border-radius: 10px;
 }
 @media (max-width:700px){
     .ourServices{
@@ -282,17 +343,18 @@ width: max(96px,18%);
     }
 }
 .card img{
+    border-radius: 10px 10px 0px 0px;
     height: 30vh;
     width: 100%;
 }
 .card h4{
-    color: red;
-    padding:1em 0;
+    color: var(--orange);
+    padding: 10px 0;
     font-size:1.4em;
 }
 .card p{
     padding:0 3em;
-    font-size: 1em;
+    font-size: 14px;
 }
 
 
@@ -312,7 +374,7 @@ width: max(96px,18%);
   /* Slider */
   .container{
     background-color:  rgb(0, 140, 255);
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 .slick-slide {
     /* margin: 10px; */
@@ -478,7 +540,6 @@ width: max(96px,18%);
 .product{
     width: max(150px,20vw);
     overflow: hidden;
-    transition: outline 200ms ease-in-out;
     background-color: #383838;
 }
 .product img{
@@ -497,8 +558,9 @@ text-decoration: none;
 color:white;
 
 }
-.product:hover{
-    outline: 3px solid #E4281C;
+.product:hover.product  h5{
+    color: var(--orange);
+    /* outline: 3px solid var(--orange); */
 }
 
 /* Consumable */
@@ -542,42 +604,7 @@ width: 100%;
     border-radius: 8px;
     cursor: pointer;
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropbtn{
-      border: none;
-      text-decoration: none;
-    color:black;
-    font-family:var(--secondary-font);
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: color 200ms ease-in-out;
-    background-color: white;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {color: var(--orange);}
+
 #contactForm > input:focus{
     outline: none;
 }
