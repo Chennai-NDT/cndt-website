@@ -865,8 +865,13 @@ footer{
 .ourStory div{
     margin-top: 50px;
 }
-.iso{
-    width: 200px;
+.iso1{
+    width: 100px;
+    aspect-ratio: 1;
+    padding:1em;
+}
+.iso2{
+    width: 95px;
     aspect-ratio: 1;
     padding:1em;
 }
