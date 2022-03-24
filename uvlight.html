@@ -4,36 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Poppins:wght@400;800&family=Roboto&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
-    <title>CNDT|UV LED Lamps</title>
+    <title>UV LED Lamps - CNDT</title>
 </head>
 <body>
     <button class="nav-toggle">
         <img id="menu-icon" src="./images/menu.png" alt="">
     </button>
     <nav>
-        <img id="logo" src="./images/logo.png" alt="logo">
+        <div class="row1">
+            <div class="logo-container">
+                <img id="logo" src="./images/logo.png" alt="logo">
+                <h2>CHENNAI NDT</h2>
+            </div>
+            <div class="iso-logos">
+                <img src="./images/Logos/iso-17025.png" alt="">
+                <img src="./images/Logos/ISO_9001-2015.SVG" alt="">
+            </div>
+        </div>
         <ul data-visible="false" class="primary-nav">
-            <li><a href="/"> Home</a></li>
+            <li ><a href="/" id="active" > Home</a></li>
             <li><a href="/#services">Services</a></li>
-            <li class="dropdown" >
-                <a  href="/#products"><button class="dropbtn">Products</button></a>
+            <li class="dropdown" ><button class="dropbtn">Products</button>
                 <div class="dropdown-content">
                       <a href="/equipments.html">Equipment</a>
                       <a href="/accessories.html">Accessories</a>
-                      <a id="active" href="/uvlight.html">UV LED LAMPs</a>
+                      <a href="/uvlight.html">UV LED LAMPs</a>
                       <a href="/advanced.html">UT & Advanced NDT</a>
                     </div>
             </li>
             <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
         </ul> 
     </nav>
+    
     <div class="spacer" style="height: 30px;"></div>
     <div class="sub-title">
         <img src="./images/line.png" alt="">
@@ -54,6 +64,11 @@
             <h5>UV Light Meter</h5>
         </div>
     </section>
+    <div class="spacer"></div>
+    <div class="mapBox">
+        <h3>Find Us Here!</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62219.6711858233!2d80.06711367910157!3d12.925102599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f630bb412d3%3A0x11d6ba51f491979c!2sChennai%20NDT%20-%20Manufacturer%20NDT%20Equipment%2C%20MPI%20Equipment%2C%20Crack%20Detection%20Equipment%20%7C%20NDT%20Training!5e0!3m2!1sen!2sin!4v1647501033121!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" id="map"></iframe>
+    </div>
     <div class="spacer" id="contact-us"></div>
     <section class="contact-us" >
         <div class="icons">
@@ -80,16 +95,12 @@
     </section>
     <div class="spacer"></div>
     
-    <div class="mapBox">
-        <h3>Find Us Here!</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62219.6711858233!2d80.06711367910157!3d12.925102599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f630bb412d3%3A0x11d6ba51f491979c!2sChennai%20NDT%20-%20Manufacturer%20NDT%20Equipment%2C%20MPI%20Equipment%2C%20Crack%20Detection%20Equipment%20%7C%20NDT%20Training!5e0!3m2!1sen!2sin!4v1647501033121!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" id="map"></iframe>
-    </div>
     <div class="spacer"></div>
     <section class="sitemap">
         <div>
             <h5>Chennai NDt</h5>
             <p>#23,Mellandai 1st Cross Street <br>
-            Musichur Road, Tambaram West,<br>
+            Mudichur Road, Tambaram West,<br>
             Chennai - 600 045.</p>
             <p>Phone: +91 98844 70812</p>
         </div>
