@@ -49,3 +49,13 @@ const appearOptions = {
   equipments.forEach(equipment=>{
     appearOnScroll.observe(equipment);
   })
+
+
+const nav=document.querySelector(".primary-nav");
+  const links=document.querySelectorAll(".primary-nav a");
+  links.forEach(link=>{
+    link.addEventListener('click',()=>{
+      nav.setAttribute("data-visible",false);
+      menuIcon.src="./images/menu.png";
+    })
+  })

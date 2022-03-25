@@ -27,8 +27,6 @@ body{
     overflow-x: hidden;
     margin-top: 100px;
 }
-
-
 .fade-left{
     opacity: 0;
   transform: translateX(10%);
@@ -41,9 +39,7 @@ body{
 }
 @media (max-width:700px) {
     .fade-left{
-        opacity: none;
-      transform:none;
-      transition: all 1s;
+        all :none;
     }
     .fade-right{
         opacity: none;
@@ -95,7 +91,6 @@ nav{
     background: #7AB846;
     z-index: 999;
     box-shadow:0 1px;
-    
 }
 
 
@@ -131,9 +126,7 @@ height: 100%;
 #active{
     background-color: var(--background);
 }
-#active:hover{
-    background-color: var(--background);
-}
+
 .primary-nav a:hover{
 /* color: var(--orange); */
 background-color: var(--background);
@@ -194,12 +187,17 @@ background-color: var(--background);
     body{
         margin-top:60px;
     }
+   
     .primary-nav{
         all:none;
     }
     .logo-container h2{
         font-size:22px;
     }
+    .dropdown:hover{
+        background-color: transparent;
+    }
+   
     .iso-logos{
         display: none;
     }
@@ -214,8 +212,16 @@ background-color: var(--background);
         transition: transform 350ms ease-out;
         gap: 2rem;
     }
+    .primary-nav > *{
+        width: auto;
+        justify-content: center;
+        text-align: left;
+    }
     .primary-nav a{
         color: white;
+    }
+    .primary-nav a:hover{
+        background-color: transparent;
     }
     .nav-toggle{
         display: block;
@@ -243,7 +249,6 @@ background-color: var(--background);
         z-index: 1;
       }
       .dropdown-content a {
-        color: #fff;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -258,7 +263,11 @@ background-color: var(--background);
         transition: color 200ms ease-in-out;
         background-color: transparent;
       }
-      
+      #active{
+          background-color: transparent;
+          color: #000;
+              }
+    
 }
 
 .cover{
