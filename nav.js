@@ -4,7 +4,6 @@ const menuIcon=document.querySelector("#menu-icon");
 
 menu.addEventListener("click",()=>{
     const visibility= navigation.getAttribute('data-visible');
-    console.log(visibility);
     if(visibility==="false"){
         navigation.setAttribute("data-visible",true);
         menuIcon.src="./images/close.png";

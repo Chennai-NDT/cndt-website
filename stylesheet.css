@@ -88,12 +88,12 @@ nav{
     position: fixed;
     width: 100%;
     top:0;
+    right: 0;
+    left: 0;
     background: #7AB846;
     z-index: 999;
     box-shadow:0 1px;
 }
-
-
 #logo{
 cursor: pointer;
 height: 100%;
@@ -187,7 +187,6 @@ background-color: var(--background);
     body{
         margin-top:60px;
     }
-   
     .primary-nav{
         all:none;
     }
@@ -197,7 +196,6 @@ background-color: var(--background);
     .dropdown:hover{
         background-color: transparent;
     }
-   
     .iso-logos{
         display: none;
     }
@@ -231,7 +229,7 @@ background-color: var(--background);
         border: none;
         position: fixed;
         top: 1rem;
-        right: 1rem;
+        right: 3rem;
         z-index: 9999;
     }
     button img{
@@ -267,6 +265,7 @@ background-color: var(--background);
           background-color: transparent;
           color: #000;
               }
+
     
 }
 
