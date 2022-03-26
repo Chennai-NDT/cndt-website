@@ -16,7 +16,7 @@ html{
 font-family: var(--primary-font);
 color: black;
 font-weight: 400;
-font-size: 12px;
+font-size: 14px;
 }
 @media (max-width:1367) {
     :root{
