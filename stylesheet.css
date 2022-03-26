@@ -18,11 +18,7 @@ color: black;
 font-weight: 400;
 font-size: 14px;
 }
-@media (max-width:1367) {
-    :root{
-        font-size: 10px;
-    }
-}
+
 
 body{
     overflow-x: hidden;
@@ -93,7 +89,7 @@ nav{
     top:0;
     right: 0;
     left: 0;
-    background: #7AB846;
+    background: var(--green);
     z-index: 999;
     box-shadow:0 1px;
 }
@@ -116,7 +112,8 @@ height: 100%;
     font-family:var(--secondary-font);
     font-weight: bold;
     font-size: 1.2rem;
-    /* transition: color 200ms ease-in-out; */
+    padding: 0.3em 1em;
+    transition: all 200ms ease-in-out;
 }
 .primary-nav > *{
     width: 25vw;
@@ -162,6 +159,7 @@ background-color: var(--background);
       border: none;
       text-decoration: none;
     color:black;
+    padding: 0.3em 1em;
     font-family:var(--secondary-font);
     font-weight: bold;
     font-size: 1.2rem;
@@ -869,6 +867,7 @@ footer{
     color: white;
     padding:1em 2em ;
     background-color: #000;
+    /* font-size: 1.4em; */
 }
 
 .equipments{
@@ -882,16 +881,20 @@ footer{
     display: flex;
     margin: 1em;
     padding: 1em;
+    border-radius: 10px;
 }
 .equipments p{
     padding:  2rem 0 3rem;  
+    /* font-size: 1.4em; */
 }
 .equipments img{
     width: max(220px,30%);
     aspect-ratio: 1/.8;
+    border-radius: 10px;
 }
 .equipment h2{
     text-decoration:underline;
+    color: #000;
 }
 @media (max-width:700px){
     .equipment{
