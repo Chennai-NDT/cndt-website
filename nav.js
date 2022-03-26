@@ -16,3 +16,11 @@ menu.addEventListener("click",()=>{
 document.getElementById('logo').addEventListener('click',()=>{
     location.href="http://chennaindt.in";
   });
+  const navHeight= document.querySelector('nav').getBoundingClientRect().height;
+  document.querySelector('body').style.marginTop=navHeight+"px";
+  console.log(navHeight);
+window.onresize=function() {
+    const navHeight= document.querySelector('nav').getBoundingClientRect().height;
+    document.querySelector('body').style.marginTop=navHeight+"px";
+    console.log(navHeight);
+}

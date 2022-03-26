@@ -16,6 +16,7 @@ html{
 font-family: var(--primary-font);
 color: black;
 font-weight: 400;
+font-size: 12px;
 }
 @media (max-width:1367) {
     :root{
@@ -25,7 +26,6 @@ font-weight: 400;
 
 body{
     overflow-x: hidden;
-    margin-top: 100px;
 }
 .fade-left{
     opacity: 0;
@@ -39,12 +39,15 @@ body{
 }
 @media (max-width:700px) {
     .fade-left{
-        all :none;
+        opacity: none;
+        transform: none;
+        transition: all 1s;
+
     }
     .fade-right{
         opacity: none;
         transform: none;
-        transition: none;
+        transition: all 1s;
     }
 }
 .visible {
@@ -229,7 +232,7 @@ background-color: var(--background);
         border: none;
         position: fixed;
         top: 1rem;
-        right: 3rem;
+        right: 1rem;
         z-index: 9999;
     }
     button img{
@@ -355,12 +358,16 @@ width: max(96px,18%);
     margin:50px auto 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+.aboutUs>*{
+    flex: 2;
 }
 .founderImg{
-    padding-left: 8%;
-    display: inline-block;
     text-align: center;
+}
+.founderImg img{
+    width: 200px;
 }
 
 .founderImg h6{
@@ -373,9 +380,17 @@ width: max(96px,18%);
     font-size: 1em;
     padding-top: 5px;
 }
-.aboutUs p{
-    padding: 0 8%; 
-    font-size: max(1.8vw,14px);
+.aboutUs div p{
+    font-size: 1.4rem;
+}
+.aboutUs a{
+    /* text-decoration: none; */
+    /* background-color: var(--orange); */
+    /* padding: 5px 1em; */
+    font-size: 16px;
+    color: var(--orange);
+    /* color: #fff; */
+    border-radius: 10px;
 }
 
 @media(max-width:1000px){
@@ -928,6 +943,28 @@ footer{
     margin: 0;
     padding: 1em;
 }
+.vissionmission{
+    display: flex;
+}
+@media (max-width:1000px) {
+    .vissionmission{
+        flex-direction: column;
+    }
+}
+.vissionmission>*{
+flex: 1;
+background-color: var(--orange);
+font-size: 1.2em;
+margin: 1em;
+padding: 1em;
+border-radius: 10px;
+color: #fff;
+}
+.vission span,.mission span{
+font-size: 2em;
+font-weight: 700;
+color: #000;
+}
 
 .ourStory{
     padding:1em ;
@@ -947,6 +984,10 @@ footer{
 }
 .ourStory div{
     margin-top: 50px;
+}
+.partners{
+    display: flex;
+    justify-content: space-around;
 }
 .iso1{
     width: 100px;
