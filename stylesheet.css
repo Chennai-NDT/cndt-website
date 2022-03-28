@@ -418,7 +418,8 @@ width: max(96px,18%);
     width:350px;
     height: 100%;
     font-weight: 700;
-    background:#F8EFEF;
+    background:var(--orange);
+    color: #fff;
     text-align: center;
     margin: 1em;
     padding-bottom:1em ;
@@ -444,16 +445,27 @@ width: max(96px,18%);
     width: 100%;
 }
 .card h4{
-    color: var(--orange);
+    color: #000;
     padding: 10px 0;
     font-size:1.4em;
 }
 .card p{
     padding:0 3em;
     font-size: 14px;
+    font-weight: 500;
 }
-
-
+.card a{
+    text-decoration: none;
+    padding: 0px 10px;
+    background-color: black;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+.card a:hover{
+    color: #000;
+    background-color: #fff;
+}
 
 
 
@@ -919,17 +931,23 @@ footer{
     text-align: center;
     background-color: #FEC001;
     border-radius: 0px 31px;
+    position: relative;
 }.accessorie img{
     width: 80%;
     aspect-ratio: 1/.9;
     margin: 2em auto;
     border-radius: 12px;
+    margin-bottom: 100px;
 }
 .accessorie h5{
+    position: absolute;
     padding:2em ;
     background-color: #383838;
     color: white;
     border-radius: 0px 31px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
 }
 
 #advanced-title{
