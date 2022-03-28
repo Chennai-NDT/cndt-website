@@ -18,6 +18,10 @@ color: black;
 font-weight: 400;
 font-size: 14px;
 }
+@font-face{
+        font-family: nulShock;
+        src:url(./nulshock\ bd.woff);
+}
 
 
 body{
@@ -81,6 +85,7 @@ padding: 10px;
 .row1 h2{
     color: var(--orange);
     font-weight: 900;
+    font-family: nulShock;
 }
 nav{
     align-items: center;
