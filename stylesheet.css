@@ -285,6 +285,7 @@ left:9vw;
 .cover img{
     width: 100%;
     min-height: 200px;
+    
     background:cover; 
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -312,18 +313,25 @@ font-weight: 600;
     font-weight: 700;
     font-size: max(3.3vw,12px);
     text-shadow: 0px 4px 4px #000000;
+    margin: 1em 0px 0px;
     width: 56%;
 }
 .cover h2 span{
     color: var(--lime);
 }
-
+/* .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+} */
 .contactUs{
     background-color: var(--orange);
     border: none;
     font-size: max( 1.6vw, 9.7px);
     font-weight: 700; 
     padding: 0.5em 2em; 
+    margin: 1em 0px;
     width: fit-content;
     color: white;
     /* text-shadow: -2px 1px 2px rgba(0, 0, 0, 0.85); */
