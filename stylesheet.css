@@ -700,6 +700,7 @@ width: 100%;
     flex-direction: column;
     box-shadow: -54px 62px 10px rgba(0, 0, 0, 0.25);
     padding: 1em 3em 1em;
+    background-color: #fff;
 }
 #contactForm h3{
     font-size: 2.8em;
@@ -876,6 +877,7 @@ footer{
     text-align: center;
     font-family: var(--mons);
     border-bottom:  10px solid #383838;
+    background-color: #fff;
 }
 
 
@@ -1057,19 +1059,38 @@ color: #000;
     height: 300px;
     margin: 0 auto;
 }
-
+article{
+    margin-top: 140px;
+}
 .inspection{
     display: flex;
     width: 80%;
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
     border: 1px solid black;
-    margin: 1em;
+    margin: 1em auto;
     padding: 1em;
 }
 .inspection>*{
+    
+    margin: 1em;
+}
+.inspection div{
     flex: 2;
 }
-
+.inspection div h2{
+    margin-bottom: 20px;
+}
 .inspection img{
-    width: 50%;
+    flex: 2;
+    width: 200px;
+    padding: 1em;
+}
+@media (max-width:1000px) {
+    .inspection{
+        flex-direction: column;
+    }
+    .inspection img{
+        width: 80%;
+    }
 }
