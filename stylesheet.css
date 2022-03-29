@@ -285,7 +285,6 @@ left:9vw;
 .cover img{
     width: 100%;
     min-height: 200px;
-    
     background:cover; 
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -1004,17 +1003,25 @@ color: #000;
 .title{
     text-align: center;
     font-family: nulShock;
-    font-size: 72px;
+    font-size: min(72px,10vw);
     color: var(--orange);
 }
 
 .ourStory{
     padding:1em ;
-    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
+}
+
+.ourStory>*{
+    width: 70%;
+    margin: 0 auto;
+}
+.ourStory ul{
+    width: 80%;
+    margin: 0 auto;
 }
 .ourStory h3{
     font-size: 2em;
@@ -1049,4 +1056,20 @@ color: #000;
 .iso-container{
     height: 300px;
     margin: 0 auto;
+}
+
+.inspection{
+    display: flex;
+    width: 80%;
+    background-color: #fff;
+    border: 1px solid black;
+    margin: 1em;
+    padding: 1em;
+}
+.inspection>*{
+    flex: 2;
+}
+
+.inspection img{
+    width: 50%;
 }
