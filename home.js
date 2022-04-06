@@ -59,3 +59,14 @@ const nav=document.querySelector(".primary-nav");
       menuIcon.src="./images/menu.png";
     })
   })
+
+const coverImg=document.querySelector(".cover");
+function changeBackground(){
+  if(coverImg.style.backgroundImage==`url("./images/cover2.png")`){
+    coverImg.style.backgroundImage="url(./images/cover.png)";
+  }else{
+    coverImg.style.backgroundImage="url(./images/cover2.png)";
+  }
+
+}
+setInterval(changeBackground,3000)

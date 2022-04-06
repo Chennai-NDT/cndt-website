@@ -195,6 +195,9 @@ background-color: var(--background);
       padding: 0 1em;
   }
 @media (max-width:1000px) {
+    #logo{
+        height: 40px;
+    }
     body{
         margin-top:60px;
     }
@@ -203,6 +206,7 @@ background-color: var(--background);
     }
     .logo-container h2{
         font-size:22px;
+        padding: none;
     }
     .dropdown:hover{
         background-color: transparent;
@@ -282,21 +286,21 @@ background-color: var(--background);
 
 .cover{
     position: relative;
-    min-height: max(48vw,220px); 
+    min-height: max(48vw,220px);
+    max-height: 70vh;
+    background-image: url("./images/cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    margin: 0;
+    transform: translate(-0.10%,-5%);
 }
 .cover>*{
 position: absolute;
 left:9vw;
 }
-.cover img{
-    width: 100%;
-    min-height: 200px;
-    background:cover; 
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: brightness(0.6);
-    left:0;
-}
+
+
 .cover p{
 color: white;
 font-size: 1.2vw;
@@ -1099,3 +1103,45 @@ article{
         width: 80%;
     }
 }
+.calibration{
+    text-align: center;
+}
+.caliberation{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: left;
+}
+.caliberation>*{
+    flex: 2;
+    padding: 1em;
+    align-self: center;
+    margin: 30px 0;
+}
+.caliberation img{
+    max-width: 30%;
+}
+
+.calibration ul{
+    text-align: left;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    color: white;
+    width: fit-content;
+    padding: 2em;
+    margin-left: 10%;
+}
+
+@media (max-width:800px) {
+    .caliberation img{
+        max-width: 300px;
+    }
+    .caliberation{
+        flex-direction: column;
+        }
+        .caliberation>*{
+            margin: 10px 0;
+        }
+} 
+
