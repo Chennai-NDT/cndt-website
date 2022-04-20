@@ -24,3 +24,16 @@ window.onresize=function() {
     document.querySelector('body').style.marginTop=navHeight+"px";
     console.log(navHeight);
 }
+
+var marker = document.querySelector('#marker');
+var item=document.querySelectorAll('.primary-nav a');
+
+function indicator(e){
+    marker.style.left=e.offsetLeft+'px';
+    marker.style.width=e.offsetLeft+'px';
+}
+item.forEach(element => {
+    element.addEventListener('click',(e)=>{
+        indicator(e.target);
+    })
+});
