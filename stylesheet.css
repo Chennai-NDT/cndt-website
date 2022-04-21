@@ -9,7 +9,7 @@ html{
 --green:#7AB846;
 --orange:rgb(255, 60, 0);
 --lime:#FAFF00;
---background: #529918;
+--background: rgba(240, 12, 12, 0.678);
 --primary-font:'Poppins','Helvetica';
 --secondary-font:'Montserrat', sans-serif;
 --mons: 'Montserrat', sans-serif;
@@ -139,6 +139,7 @@ height: 100%;
 .primary-nav a:hover{
 /* color: var(--orange); */
 background-color: var(--background);
+backdrop-filter: blur(12px);
 }
 .nav-toggle{
     display: none;
@@ -1154,7 +1155,7 @@ article{
     display: flex;
     width: max(50%,100px);
     align-items: center;
-    background-image: linear-gradient(to right top, #c01493, #d5007c, #e40061, #eb0045, #eb1225);
+    background-image: linear-gradient(to right top, #c446c4, #e3389c, #ef3f76, #ec5454, #de6c3a);
     border-radius:30px ;
     padding: 1em;
     color: white;
