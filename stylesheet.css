@@ -1196,3 +1196,43 @@ article{
     width: 25%;
     background-color: #FEC001;
 }
+@media (max-width:700px) {
+.contact-details{
+    display: none;
+}
+}
+.downloadButton{
+    padding: 1em;
+    background-color: orangered;
+    color: white;
+    height: fit-content;
+    text-decoration: none;
+    border-radius: 10px;
+    width: fit-content;
+}
+.uvLight{
+    height: 60vh;
+}
+.uvBroucher{
+    display: flex;justify-content: center;
+    align-items: center;
+}
+.uvBroucher div{
+    display: flex;
+    flex-direction: column;
+}
+.uvBroucher div>*{margin: 10px 20px;
+}
+.uvBroucher div h2{
+    font-family: var(--mons);
+    color: #c446c4;
+}
+@media (max-width:700px) {
+    .uvLight{
+        width: 70%;
+    }
+    .uvBroucher{
+        flex-direction: column;
+        align-items: center;
+    }
+}
